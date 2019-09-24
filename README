@@ -1,10 +1,1 @@
-This code was developed in a Mac OS terminal enviroment.
-To run the code, firstly, please compile the code by command "javac EmployeeSet.java", and then you can run the code by command "java EmployeeSet".
-
-The code is using test data file "core_dataset.csv". After running the program, there will be a file of "ordered_no.csv" written to the current folder. The file contains all the employee info with employee number in acsending order.
-
-All the methods that were required in the LAB3 assignment were being written and tested in the main function. Please check all the testings in "public static void main(String[] args)".
-
-For ensureCapcity method, every time the method is called, the original capacity and enlargerd capacity would be printed in the terminal console.
-
-If there is an employee has the same employee number with the employee that is already written in the collection, an error message would be printed to the terminal console and the employee info would not be added to the current collection.
+Code for CS463 Data Structures
