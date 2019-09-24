@@ -1,0 +1,73 @@
+This code was developed in a Mac OS terminal enviroment.
+To run the code, firstly, please compile the code by command "javac Employee.java", and then you can run the code by command "java Employee".
+
+The code is using test data that was wrapped up into a file of "test.csv".
+
+All the methods that were required in the LAB2 assignment were being written and tested in the main function. Please check all the testings in "public static void main(String[] args)"
+
+
+
+
+
+
+
+
+_______________________________________________________
+For a record, all the testings are copied in the following (these are already included in the main function):
+
+	//read data from test.csv test data file
+	readfile("test.csv");	
+	System.out.println("\n");
+	
+
+	//(2)Copy constructor
+	System.out.println("(2) Copy constructor");
+	System.out.println("Copy Employee no. 6's info into emcopy1");
+	Employee emcopy1 = new Employee (em[5]);	
+	System.out.println("name copied into emcopy1");
+	System.out.println(emcopy1.name);
+	System.out.println("Set emcopy1 name to Geferry");
+	emcopy1.name="Geferry";
+	System.out.println("name of emcopy1");
+	System.out.println(emcopy1.name);
+	System.out.println("name of Empolyee no.6");
+	System.out.println(em[5].name);	
+	System.out.println("\n");
+
+
+	//(3)get and set method
+	System.out.println("(3) get and set method");
+	System.out.println("Employee no. 1 has name of "+em[0].getName());
+	System.out.println("Set Employee no.2 name to Tommy");
+	System.out.println("Before set");
+	System.out.println(em[0].getName());
+	em[2].setName("Tommy");
+	System.out.println("After set");
+	System.out.println(em[0].getName());
+	System.out.println("Employee no. 3 advisor 1 to advisor 9");
+	System.out.println("Before set");
+	em[2].toString();	
+	em[2].setAdvisor(1,9);
+	System.out.println("After set");
+	em[2].toString();
+	System.out.println("\n");
+	
+
+	//(4)toString method testing
+	System.out.println("(4) toString method");
+	em[2].toString();
+	em[6].toString();
+	System.out.println("\n");
+	
+	
+	//(5)equal method testing
+	System.out.println("(5) equal method");
+	System.out.println(em[2].equals(em[4]));
+	System.out.println(em[2].equals(em[2]));
+	System.out.println("\n");
+	
+	//(6)getAllAdvisors method testing
+	System.out.println("(6) getAllAdvisors method");
+	System.out.println("In total "+getAllAdvisors(em[0],em[3]).length+" distinct advisors");
+	System.out.println("\n");
+	System.out.println("In total "+getAllAdvisors(em[3],em[5]).length+" distinct advisors");
